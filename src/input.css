@@ -13,23 +13,23 @@ p {
     display: block;
 } */
 #exe1{
-    background: url('../dist/images/executive1.png') top center no-repeat;
+    background: url('./images/executive1.png') top center no-repeat;
     background-size: cover;
 }
 #exe2{
-    background: url('../dist/images/executive2.png') top center no-repeat;
+    background: url('./images/executive2.png') top center no-repeat;
     background-size: cover;
 }
 #exe3{
-    background: url('../dist/images/executive3.png') top center no-repeat;
+    background: url('./images/executive3.png') top center no-repeat;
     background-size: cover;
 }
 #exe4{
-    background: url('../dist/images/executive4.png') top center no-repeat;
+    background: url('./images/executive4.png') top center no-repeat;
     background-size: cover;
 }
 #exe5{
-    background: url('../dist/images/executive5.png') top center no-repeat;
+    background: url('./images/executive5.png') top center no-repeat;
     background-size: cover;
 }
 
