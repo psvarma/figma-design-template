@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma template design</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body>
+    <header id="header" class="border-b border-b-[#D9DEDD]">
+        <nav class="container m-auto relative px-4 py-4 flex justify-between items-center bg-white">
+            <a class="text-3xl font-bold leading-none" href="#">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-sm hover:text-[#646A69]" href="#">About us</a></li>
+                <li><a class="text-sm hover:text-[#646A69]" href="#">Team</a></li>
+                <li><a class="text-sm hover:text-[#646A69]" href="#">Solutions</a></li>
+                <li><a class="text-sm hover:text-[#646A69]" href="#">Blog</a></li>
+            </ul>
+            <a class="hidden lg:flex lg:items-center lg:gap-1 py-2 px-6 bg-white text-sm border border-black rounded-full transition duration-200 hover:border-[#BEF264] hover:bg-[#BEF264] " href="#"><span>Get in touch</span> <img src="./images/big-arrow-right.png" alt="arrow" class="w-6"></a>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        <img src="./images/logo.png" alt="Logo">
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-4">
+                            <a class="block text-sm rounded hover:text-[#646A69]" href="#">About Us</a>
+                        </li>
+                        <li class="mb-4">
+                            <a class="block text-sm rounded hover:text-[#646A69]" href="#">Team</a>
+                        </li>
+                        <li class="mb-4">
+                            <a class="block text-sm rounded hover:text-[#646A69]" href="#">Solutions</a>
+                        </li>
+                        <li class="mb-4">
+                            <a class="block text-sm rounded hover:text-[#646A69]" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inline-flex items-center justify-center gap-1 py-2 px-6 bg-white text-sm border border-black rounded-full transition duration-200 mr-auto hover:border-[#BEF264] hover:bg-[#BEF264]">
+                    <span>Get in touch</span> <img src="./images/big-arrow-right.png" alt="arrow" class="w-6">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="banner" class="relative flex justify-between items-center border-b border-b-[#D9DEDD]">
+        <div class="mx-auto xl:ml-32 lg:ml-16 px-2 lg:px-0 text-center lg:text-left">
+            <div class="lg:max-w-lg pt-10 pb-10 w-full pl-4 lg:pl-0  pr-4">
+                <div class="subtitle text-sm flex justify-items-center items-center mb-4"><img src="./images/icon1.png" alt="icon" class="mr-1"> <span>Powering Tomorrow</span></div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl mb-4">The Future of Green Energy</h1>
+                <p class="mb-4">Our commitment to green energy is paving the way for a cleaner, healthier planet. Join us on a journey towards a future where clean, renewable energy sources transform the way we power our lives.</p>
+                <button class="py-2 px-6 text-sm border border-[#022C22] bg-[#022C22] text-white hover:border-[#BEF264] hover:bg-[#BEF264] hover:text-black rounded-full mr-2 mb-4">See our solutions</button>
+                <button class="py-2 px-6 bg-white text-sm border border-[#022C22] hover:border-[#BEF264] hover:bg-[#BEF264] rounded-full mb-4">Get in touch</button>
+            </div>
+        </div>
+        <div class="w-2/5 bg-[#BEF264] p-2 hidden lg:block">
+            <img src="./images/banner_img.png" alt="Banner image" class="mx-auto">
+        </div>
+    </div>
+    <div id="logoBanner" class="pt-20 pb-20 border-b border-b-[#D9DEDD]">
+        <div class="container flex justify-start mx-auto items-center px-4 gap-8 flex-wrap">
+            <h6 class="font-semibold md:w-1/3">Global partners that trusted us</h6>
+            <img src="./images/logo1.png" alt="">
+            <img src="./images/logo2.png" alt="">
+            <img src="./images/logo3.png" alt="">
+            <img src="./images/logo4.png" alt="">
+        </div>
+    </div>
+    <div id="solutions" class="mt-20">
+        <div class="bg-[#FFF7ED] m-4 rounded-lg pl-4 pr-4">
+            <div class="container mx-auto pt-20 pb-20">
+                <h6 class="subtitle text-sm flex justify-items-center items-center mb-4 border-b border-b-[#D9DEDD] pb-3"><img src="./images/Dot.png" alt="icon" class="mr-2"> <span>Solutions</span></h6>
+
+                <h1 class="text-4xl mt-11 mb-8">Key to clean future</h1>
+
+                <div class="flex flex-wrap justify-between">
+                    <div id="energy1" class="w-full md:w-1/2 mb-10 md:pr-4">
+                        <img src="./images/customIcon1.png" alt="" class="mb-4">
+                        <h3 class="text-xl mb-2">EV charging </h3>
+                        <p class="mb-2">EVs use electricity as a power source, which can be generated from renewable energy sources. Our solutions help reducing greenhouse gas emissions in the transportation sector.</p>
+                        <a href="" class="font-semibold hover:text-[#BEF264]">Read more</a>
+                    </div>
+                    <div id="energy2" class="w-full md:w-1/2  mb-10 md:pl-4">
+                        <img src="./images/customIcon2.png" alt="" class="mb-4">
+                        <h3 class="text-xl mb-2">Solar Energy</h3>
+                        <p class="mb-2">Solar panels convert sunlight into electricity. Photovoltaic (PV) cells on these panels capture the energy from the sun and convert it into electrical power.</p>
+                        <a href="" class="font-semibold hover:text-[#BEF264]">Read more</a>
+                    </div>
+                    <div id="energy3" class="w-full md:w-1/2 mb-10 md:pr-4">
+                        <img src="./images/customIcon3.png" alt="" class="mb-4">
+                        <h3 class="text-xl mb-2">Wind Energy</h3>
+                        <p class="mb-2">Wind turbines harness the kinetic energy of the wind to generate electricity. Wind farms with multiple turbines are commonly used to produce large amounts of clean energy.</p>
+                        <a href="" class="font-semibold hover:text-[#BEF264]">Read more</a>
+                    </div>
+                    <div id="energy4" class="w-full md:w-1/2 mb-10 md:pl-4">
+                        <img src="./images/customIcon4.png" alt="" class="mb-4">
+                        <h3 class="text-xl mb-2">Hydropower</h3>
+                        <p class="mb-2">This technology uses the energy from flowing water, such as rivers and dams, to turn turbines and generate electricity. It's one of the oldest forms of renewable energy.</p>
+                        <a href="" class="font-semibold hover:text-[#BEF264]">Read more</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div id="about" class="pt-20 pb-20 pl-4 pr-4">
+        <div class="container m-auto md:flex md:justify-between gap-12">
+            <h2 class="md:w-1/3 text-5xl mb-8">About us</h2>
+            <div class="md:w-3/5">
+                <p class="text-black text-lg">At Flow, we're committed to a sustainable future. As a pioneering force in the green energy sector, we've been at the forefront of the transition to clean, renewable power sources. Our mission is simple yet profound: to create a world where energy is not only abundant but also environmentally responsible. We believe that by harnessing the power of nature, we can power the world and protect it simultaneously.</p>
+                <button class="py-2 px-6 text-sm border border-[#BEF264] bg-[#BEF264] text-black hover:border-[#022C22] hover:bg-[#ffffff] rounded-full mt-4">Read more</button>
+            </div>
+            
+        </div>
+    </div>
+    <div id="imageContainer" class="flex justify-between gap-4 mb-28 overflow-hidden">
+        <img src="./images/img1.png" alt="image" class="max-w-full">
+        <img src="./images/img2.png" alt="image" class="max-w-full">
+        <img src="./images/img3.png" alt="image" class="max-w-full">
+        <img src="./images/img4.png" alt="image" class="max-w-full">
+        <img src="./images/img5.png" alt="image" class="max-w-full">
+    </div>
+    <div id="data" class="mb-28">
+        <div class="container mx-auto flex justify-evenly flex-wrap gap-16 pl-8 pr-8">
+            <div id="d1" class="text-center">
+                <h2 class="text-4xl mb-3">5,000 Mwh</h2>
+                <p>Renewable Energy Generated</p>
+            </div>
+            <div id="d2" class="text-center">
+                <h2 class="text-4xl mb-3">2,500+</h2>
+                <p>Metric Tons of CO2 Reduced</p>
+            </div>
+            <div id="d3" class="text-center">
+                <h2 class="text-4xl mb-3">10,000+</h2>
+                <p>Customers Served</p>
+            </div>
+            <div id="d4" class="text-center">
+                <h2 class="text-4xl mb-3">15%</h2>
+                <p>Avg. Energy Saved</p>
+            </div>
+        </div>
+    </div>
+    <div id="experts" class="mb-28 pl-4 pr-4">
+        <div class="container mx-auto">
+            <h1 class="text-4xl mt-11 mb-3">Meet our experts</h1>
+            <p>Our team boasts top green energy experts, driving innovation in sustainability.</p>
+            <div class="responsive mt-10 pt-10" id="experts_slider">
+                <div class="relative w-1/4 h-96" id="exe1">
+                    <div class="absolute bottom-0 z-10 bg-white p-4 mx-auto w-3/4 m-4 left-0 right-0 rounded">
+                        <h4 class="text-sm">Jenny Wilson</h4>
+                        <p class="text-xs">Senior Sustainability Consultant</p>
+                    </div>
+                </div>
+                <div class="relative w-1/4 h-96" id="exe2">
+                    <div class="absolute bottom-0 z-10 bg-white p-4 mx-auto w-3/4 m-4 left-0 right-0 rounded">
+                        <h4 class="text-sm">Cameron Williamson</h4>
+                        <p class="text-xs">Senior Sustainability Consultant</p>
+                    </div>
+                </div>
+                <div class="relative w-1/4 h-96" id="exe3">
+                    <div class="absolute bottom-0 z-10 bg-white p-4 mx-auto w-3/4 m-4 left-0 right-0 rounded">
+                        <h4 class="text-sm">Courtney Henry</h4>
+                        <p class="text-xs">Energy Analysts</p>
+                    </div>
+                </div>
+                <div class="relative w-1/4 h-96" id="exe4">
+                    <div class="absolute bottom-0 z-10 bg-white p-4 mx-auto w-3/4 m-4 left-0 right-0 rounded">
+                        <h4 class="text-sm">Dianne Russell</h4>
+                        <p class="text-xs">Senior Renewable Energy Engineer</p>
+                    </div>
+                </div>
+                <div class="relative w-1/4 h-96" id="exe5">
+                    <div class="absolute bottom-0 z-10 bg-white p-4 mx-auto w-3/4 m-4 left-0 right-0 rounded">
+                        <h4 class="text-sm">Brooklyn Simmons</h4>
+                        <p class="text-xs">Renewable Energy Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="reachOut" class="bg-[#022C22] relative flex justify-between items-center">
+        <div class="mx-auto lg:ml-32 px-2 text-center lg:text-left lg:w-2/5 pt-10 pb-10">
+            <h1 class="lg:text-6xl md:text-5xl text-4xl text-white mb-8">Join the green movement</h1>
+            <p class="text-white text-lg">Our commitment to green energy is paving the way for a cleaner, healthier planet. </p>
+            <button class="py-2 px-6 text-sm border border-[#BEF264] bg-[#BEF264] text-black hover:border-[#022C22] hover:bg-[#ffffff] rounded-full mt-8">Get in touch</button>
+        </div>
+        <div id="bannerImage" class="w-2/5 hidden lg:block">
+            <img src="./images/Image.png" alt="" class="w-full">
+        </div>
+    </div>
+    <div id="blog" class="mt-16 mb-16 pl-4 pr-4">
+        <div class="container mx-auto">
+            <h1 class="text-4xl mb-12">Blog</h1>
+        </div>
+        <div class="container mx-auto lg:flex lg:justify-between gap-12">
+            <div id="featuredPost" class="w-full lg:w-2/3 mb-8">
+                <img src="./images/featuredPost_image.png" alt="" class="w-full mb-8">
+                <div class="tags">
+                    <span class="border border-[#000] px-4 py-2 mr-3 rounded-full inline-block">Solar Power</span>
+                    <span class="border border-[#000] px-4 py-2 rounded-full inline-block">Solutions</span>
+                </div>
+                <h2 class="mt-8 mb-4 text-4xl">Harnessing the Power of the Sun: Exploring the World of Solar Energy</h2>
+                <p class="mb-4">Solar energy is revolutionizing the way we power our world. In this blog post, we'll delve into the incredible potential of solar technology, its environmental benefits, and how you can tap into this sustainable energy source for a brighter future.</p>
+
+                <div class="userDetails flex items-center gap-4">
+                    <img src="./images/user.png" alt="icon"> 
+                    <span>Leslie Alexander</span> 
+                    <span class="dot bg-[#929C9A] block rounded-full w-1 h-1"></span> 
+                    <span>9 min read</span>
+                </div>
+            </div>
+            <div id="postlist" class="w-full lg:w-1/3">
+                <div id="postListItem1" class="sm:flex mb-12 items-center flex-grow-0">
+                    <div class="postImage sm:mr-4 lg:w-2/5 mb-4">
+                        <img src="./images/postimg1.png" alt="" class="w-full">
+                    </div>
+                    <div class="postContent lg:w-3/5">
+                        <h3 class="postTitle font-medium mb-6 text-xl">Wind Power: A Breath of Fresh Air for Clean Energy Enthusiasts</h3>
+                        <div class="userDetails flex items-center gap-2 text-xs">
+                            <img src="./images/user1.png" alt=""> 
+                            <span>Wade Warren</span> 
+                            <span class="dot bg-[#929C9A] block rounded-full w-1 h-1"></span> 
+                            <span>7 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="postListItem2" class="sm:flex mb-12 items-center flex-grow-0">
+                    <div class="postImage sm:mr-4 lg:w-2/5 mb-4">
+                        <img src="./images/postimg2.png" alt="" class="w-full">
+                    </div>
+                    <div class="postContent lg:w-3/5">
+                        <h3 class="postTitle font-medium mb-6 text-xl">From Trash to Treasure: The Promising World of Biomass Energy</h3>
+                        <div class="userDetails flex items-center gap-2 text-xs">
+                            <img src="./images/user2.png" alt=""> 
+                            <span>Jenny Wilson</span> 
+                            <span class="dot bg-[#929C9A] block rounded-full w-1 h-1"></span> 
+                            <span>12 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="postListItem3" class="sm:flex mb-12 items-center flex-grow-0">
+                    <div class="postImage sm:mr-4 lg:w-2/5 mb-4">
+                        <img src="./images/postimg3.png" alt="" class="w-full">
+                    </div>
+                    <div class="postContent lg:w-3/5">
+                        <h3 class="postTitle font-medium mb-6  text-xl">Hydrogen: Fueling the Green Energy Revolution</h3>
+                        <div class="userDetails flex items-center gap-2 text-xs">
+                            <img src="./images/user.png" alt=""> 
+                            <span>Leslie Alexander</span> 
+                            <span class="dot bg-[#929C9A] block rounded-full w-1 h-1"></span> 
+                            <span>9 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="faq" class="bg-[#FFF7ED] pt-20 pb-20 pl-4 pr-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl mb-8">FAQ</h1>
+            <p class="mb-10">Here you will find the answers to the frequently asked questions.</p>
+        </div>
+        <div class="container mx-auto grid md:grid-cols-2 gap-4 mb-16">
+            <div>
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4 mb-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+    
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4 mb-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+                
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4 mb-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+    
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4 mb-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+    
+    
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+            </div>
+            <div>
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4 mb-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+    
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4 mb-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+    
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4 mb-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+           
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4 mb-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+
+                <details class="border border-[#eeeeee] bg-white rounded-lg hover:bg-white p-4">
+                    <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel scelerisque odio. </summary>
+                    <p class="mt-6">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </details>
+            </div>
+            
+
+            
+        </div>
+        <div class="container mx-auto text-center">
+            <img src="./images/customIcon5.png" alt="icon" class="mx-auto mb-10">
+            <h3 class="text-xl mb-4">Still have questions?</h3>
+            <p class="w-full md:w-3/4 lg:w-2/4 mx-auto">For assistance, please visit our <a href="" class="text-black underline">Contact Us</a> page or call our customer support hotline at <a href="tel:6715550110" class="text-black">(671) 555-0110</a>. Our dedicated team is ready to help you on your journey to a greener, more sustainable future.</p>
+        </div>
+    </div> 
+    <!-- <div id="customerReview" class="pt-20 pb-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl mb-8">What our customers say</h1>
+            <p class="mb-10">Thousands of happy customers that changed their energy use </p>
+
+            <div class="p-20 border rounded-2xl sm:ml-40 sm:mr-40 responsive" id="review">
+                <div id="r1" class="mr-4 ml-4">
+                    <div class="rating mb-8">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-3xl mb-10">“Flow transformed my energy use. Efficient, green tech, outstanding service!”</h1>
+                    <div id="customer">
+                        <p>Jenny Wilson</p>
+                        <p>Solar energy service</p>
+                    </div>
+                </div>
+                <div id="r2" class="mr-4 ml-4">
+                    <div class="rating mb-8">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-3xl mb-10">“Flow transformed my energy use. Efficient, green tech, outstanding service!”</h1>
+                    <div id="customer">
+                        <p>Jenny Wilson</p>
+                        <p>Solar energy service</p>
+                    </div>
+                </div>
+                <div id="r3" class="mr-4 ml-4">
+                    <div class="rating mb-8">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-3xl mb-10">“Flow transformed my energy use. Efficient, green tech, outstanding service!”</h1>
+                    <div id="customer">
+                        <p>Jenny Wilson</p>
+                        <p>Solar energy service</p>
+                    </div>
+                </div>
+                <div id="r4" class="mr-4 ml-4">
+                    <div class="rating mb-8">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-3xl mb-10">“Flow transformed my energy use. Efficient, green tech, outstanding service!”</h1>
+                    <div id="customer">
+                        <p>Jenny Wilson</p>
+                        <p>Solar energy service</p>
+                    </div>
+                </div>
+                <div id="r5" class="mr-4 ml-4">
+                    <div class="rating mb-8">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <h1 class="text-3xl mb-10">“Flow transformed my energy use. Efficient, green tech, outstanding service!”</h1>
+                    <div id="customer">
+                        <p>Jenny Wilson</p>
+                        <p>Solar energy service</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bg-box"></div>
+        </div>
+    </div> -->
+    <div id="newsletter" class="bg-[#022C22] relative pt-20 pb-20 pl-4 pr-4">
+        <div class="container mx-auto text-center lg:flex lg:justify-between items-center">
+            <h1 class="lg:text-6xl md:text-5xl text-4xl text-white lg:text-left lg:w-2/4 text-center mb-8 lg:mb-0">Your Source for Green Energy Updates</h1>
+            <div class="nlform">
+                <input type="email" class="rounded-full py-2 px-6 sm:mr-4 mb-4" placeholder="Your e-mail">
+                <button class="py-2 px-6 text-sm border border-[#BEF264] bg-[#BEF264] text-black hover:border-[#022C22] hover:bg-[#ffffff] rounded-full ">Get in touch</button>
+            </div>
+        </div>
+    </div> 
+    <footer id="footer" class="pt-12 pb-12 pl-4 pr-4">
+        <div class="container m-auto">
+            <div id="footerNav" class="lg:flex justify-between">
+                <div class="footerLogo mb-8"><img src="./images/logo.png" alt="Logo"></div>
+                <div class="footerMenu sm:flex sm:justify-between gap-16">
+                    <ul>
+                        <li class="font-medium mb-6">Platform</li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">Solutions</a></li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">How it works</a></li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">Pricing</a></li>
+                    </ul>
+                    <ul>
+                        <li class="font-medium mb-6">Company</li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">About</a></li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">Our Mission</a></li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">Careers <span class="text-xs bg-black p-2 text-white rounded-md">Hiring</span></a></li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li class="font-medium mb-6">Resources</li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">Blog</a></li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">Help Center</a></li>
+                        <li class="mb-6"><a href="" class="hover:text-[#646A69]">Support</a></li>
+                    </ul>
+                </div>
+                <div class="smlinks">
+                    <a href="" class="flex items-center gap-4 mb-4 hover:text-[#646A69]"><img src="./images/smicon1.png" alt=""> <span>Follow us on Facebook</span></a>
+                    <a href="" class="flex items-center gap-4 mb-4 hover:text-[#646A69]"><img src="./images/smicon2.png" alt=""> <span>Follow us on Instagram</span></a>
+                    <a href="" class="flex items-center gap-4 mb-4 hover:text-[#646A69]"><img src="./images/smicon3.png" alt=""> <span>Follow us on Linkedin</span></a>
+                </div>
+            </div>
+            <div id="copyright" class="sm:text-right text-center">
+                <span>&copy; 2024 Flow. All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#experts_slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#review').slick({
+                arrows:true,
+                prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-solid fa-arrow-left' aria-hidden='true'></i></button>",
+                nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-solid fa-arrow-right' aria-hidden='true'></i></button>"
+            });
+            $('.single-item').slick();
+        });
+    </script>
+				
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+	
+
